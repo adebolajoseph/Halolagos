@@ -270,7 +270,7 @@ async function initMotion() {
     const motion = await import("https://esm.sh/framer-motion@12.23.24/dom");
     const { animate, inView, stagger } = motion;
 
-    animate(".hero-kicker, .hero-title, .hero-copy, .hero-actions, .hero-stats", {
+    animate(".hero-title, .hero-copy, .hero-stats", {
       opacity: [0, 1],
       y: [24, 0]
     }, {
