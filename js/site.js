@@ -102,7 +102,6 @@ function renderNav() {
             <a class="nav-link" href="${item.href}" ${item.href === active ? 'aria-current="page"' : ""}>${item.label}</a>
           `).join("")}
         </div>
-        <a href="contact.html" class="halo-button halo-button-primary hidden min-h-11 px-5 text-sm lg:inline-flex">Book a Table</a>
         <button id="menuToggle" class="grid h-11 w-11 place-items-center rounded-full border border-white/35 bg-white/10 text-white backdrop-blur lg:hidden" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
           ${icon("menu", "Open menu")}
         </button>
@@ -120,7 +119,6 @@ function renderNav() {
           <a href="${item.href}" class="rounded-2xl px-4 py-3 text-lg font-black transition hover:bg-white/10" ${item.href === active ? 'aria-current="page"' : ""}>${item.label}</a>
         `).join("")}
       </div>
-      <a href="contact.html" class="halo-button halo-button-primary mt-8 w-full">Book a Table</a>
     </div>
   `;
 }
