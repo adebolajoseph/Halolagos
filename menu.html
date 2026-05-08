@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the Halo Lagos menu of bold plates, trays, pasta, grill favorites, and shareable moments." />
+    <title>Menu | Halo Lagos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script>tailwind = { config: { theme: { extend: { colors: { halo: { ink: "#17110b", cream: "#fff7e8", gold: "#ffd76a", orange: "#ff8a00", red: "#ff4a24" } } } } } };</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header data-nav></header>
+      <main>
+        <section class="page-hero">
+          <img class="hero-media" src="images/haloplatetray.webp" alt="Halo Lagos premium food tray" />
+          <div class="container-halo pb-16 pt-32">
+            <span class="hero-kicker inline-flex rounded-full border border-white/30 bg-white/12 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-[#ffd76a] backdrop-blur">Menu</span>
+            <h1 class="hero-title font-display mt-5 max-w-4xl text-5xl font-black leading-tight sm:text-7xl">Flavor-forward plates for every kind of Lagos plan.</h1>
+            <p class="hero-copy mt-5 max-w-2xl text-lg leading-8 text-white/82">From generous group trays to plated favorites, Halo Lagos serves food that feels abundant, colorful, and made to share.</p>
+          </div>
+        </section>
+
+        <section class="section-pad">
+          <div class="container-halo">
+            <div class="reveal flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+              <div>
+                <span class="eyebrow">Featured Plates</span>
+                <h2 class="font-display mt-5 text-4xl font-black sm:text-6xl">Halo signatures</h2>
+              </div>
+              <a href="contact.html" class="halo-button halo-button-primary w-fit">Book a Table <i data-lucide="calendar-check" aria-hidden="true"></i></a>
+            </div>
+            <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-full-menu></div>
+          </div>
+        </section>
+
+        <section class="section-pad bg-white/52">
+          <div class="container-halo grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div class="reveal">
+              <span class="eyebrow">For Groups</span>
+              <h2 class="font-display mt-5 text-4xl font-black sm:text-6xl">Trays, bites, drinks, and the full table moment.</h2>
+              <p class="mt-6 text-lg leading-8 text-[#6f6254]">The Halo table is best when everyone reaches in. Ask about group trays, birthday tables, and curated food packages for casual celebrations.</p>
+              <a href="contact.html" class="halo-button halo-button-dark mt-8">Plan With Us <i data-lucide="party-popper" aria-hidden="true"></i></a>
+            </div>
+            <figure class="image-frame reveal aspect-[16/11]"><img src="images/halorice.webp" alt="Halo Lagos jollof tray" loading="lazy" /></figure>
+          </div>
+        </section>
+      </main>
+      <div data-footer></div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="js/site.js" defer></script>
+  </body>
+</html>

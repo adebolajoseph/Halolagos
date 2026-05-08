@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="See Halo Lagos food, interiors, ambiance, and social dining moments." />
+    <title>Gallery | Halo Lagos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script>tailwind = { config: { theme: { extend: { colors: { halo: { ink: "#17110b", cream: "#fff7e8", gold: "#ffd76a", orange: "#ff8a00", red: "#ff4a24" } } } } } };</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header data-nav></header>
+      <main>
+        <section class="page-hero">
+          <img class="hero-media" src="images/halonight.webp" alt="Halo Lagos bar at night" />
+          <div class="container-halo pb-16 pt-32">
+            <span class="hero-kicker inline-flex rounded-full border border-white/30 bg-white/12 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-[#ffd76a] backdrop-blur">Gallery</span>
+            <h1 class="hero-title font-display mt-5 max-w-4xl text-5xl font-black leading-tight sm:text-7xl">Every corner has a little glow.</h1>
+            <p class="hero-copy mt-5 max-w-2xl text-lg leading-8 text-white/82">Food, ambiance, interior details, warm lights, and shareable moments from the Halo Lagos experience.</p>
+          </div>
+        </section>
+
+        <section class="section-pad">
+          <div class="container-halo">
+            <div class="reveal flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+              <div>
+                <span class="eyebrow">Real Halo Moments</span>
+                <h2 class="font-display mt-5 text-4xl font-black sm:text-6xl">Food, lights, rooms, and rhythm.</h2>
+              </div>
+              <a href="contact.html" class="halo-button halo-button-primary w-fit">Book a Table <i data-lucide="camera" aria-hidden="true"></i></a>
+            </div>
+            <div class="mt-10 gallery-grid" data-gallery-grid></div>
+          </div>
+        </section>
+      </main>
+      <div data-footer></div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="js/site.js" defer></script>
+  </body>
+</html>
